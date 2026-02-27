@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "easyM trackingChecker",
+  "version": "3.3.0",
+  "description": "Überwacht EATMS-Aufrufe und alle nachgeladenen Skripte - powered by easyMarketing",
+  "permissions": [
+    "webRequest",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
